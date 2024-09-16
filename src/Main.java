@@ -10,10 +10,9 @@ public class Main {
 
         // Задача №2
         int temperature = 12;
-        if (temperature < -5) {
+        if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку.");
-        }
-        if (temperature > 5) {
+        } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки.");
         }
 
@@ -48,10 +47,12 @@ public class Main {
         }
 
         // Задача №6
-        int carriageCapacity = 57;
-        if (carriageCapacity <= 60) {
+        int maxCapacity = 102;
+        int seating = 60;
+        int passengers = 72;
+        if (passengers <= seating) {
             System.out.println("В вагоне остались сидячие места.");
-        } else if (carriageCapacity > 60 && carriageCapacity <= 102) {
+        } else if (passengers > seating && passengers <= maxCapacity) {
             System.out.println("В вагоне остались только стоячие места.");
         } else {
             System.out.println("В вагоне не осталось свободных мест.");
@@ -59,7 +60,7 @@ public class Main {
 
         // Задача №7
         int one = 25;
-        int two = 371;
+        int two = 341;
         int three = -89;
         if (one > two && one > three) {
             System.out.println("Число " + one + " самое большое.");
